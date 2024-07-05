@@ -8,7 +8,11 @@ function escapeHtml(text) {
     };
     return text.replace(/[&<>"']/g, function(m) { return map[m]; });
 }
-
+document.getElementById('bttn').addEventListener('click', function(){
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    this.classList.toggle('active');
+});
 
 function answer(){
     const text1 = document.getElementById('text1').value;
@@ -28,5 +32,11 @@ function answer(){
         }
         const highlightedText= text1.replace(regex, '<span class="highlight">$1</span>');
         document.getElementById('outputtext').innerHTML = highlightedText;
+        const data = 'data';
+
+        const aTag = document.querySelector('a');
+        aTag.addEventListener('click', () => {
+        location.href = `receive.html?${data}`;
+        });
     }
 }
