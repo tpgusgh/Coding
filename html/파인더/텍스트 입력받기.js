@@ -21,6 +21,11 @@ function answer(){
         innerText = "";
         const escapedText = escapeHtml(text1);
         const regex = new RegExp(`(${text2})`, 'gi'); // 입력된 단어를 대소문자 구분 없이(gi 플래그 사용) 찾기 위해 정규 표현식을 사용
+        if (!regex.test(text1)) {
+            alert("밑줄이 하나도 없습니다");
+            document.getElementById('outputtext').innerHTML = "";
+            return;
+        }
         const highlightedText= text1.replace(regex, '<span class="highlight">$1</span>');
         document.getElementById('outputtext').innerHTML = highlightedText;
     }

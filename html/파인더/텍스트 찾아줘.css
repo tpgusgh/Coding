@@ -15,7 +15,7 @@ body{
     align-items: center;
     border-radius: 80px;
     position: absolute;
-    top: 20%;
+    top: 30%;
     background: #8C97FD;
 }
 .text1{
@@ -35,7 +35,7 @@ body{
     background: #FFF;
     position: absolute; /* 부모 컨테이너를 기준으로 절대 위치 */
     right: 0; /* 오른쪽으로 정렬 */
-    top: 50%; /* 수직 가운데 정렬 */
+    top: 60%; /* 수직 가운데 정렬 */
     transform: translateY(-50%); /* 요소를 수직으로 가운데에 배치 */
 }
 .text2{
@@ -64,7 +64,7 @@ body{
     align-items: center;
     border-radius: 80px;
     position: absolute;
-    top: 60%;
+    top: 70%;
     background: #8C97FD;
 }
 .button{
