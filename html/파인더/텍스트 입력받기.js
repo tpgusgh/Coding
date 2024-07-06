@@ -34,9 +34,15 @@ function answer(){
         document.getElementById('outputtext').innerHTML = highlightedText;
         const data = 'data';
 
-        const aTag = document.querySelector('a');
-        aTag.addEventListener('click', () => {
-        location.href = `receive.html?${data}`;
-        });
+        const userInfo = {
+            id: "아이디",
+            name: "이름",
+            password: "비밀번호",
+          }
+          
+          const aTag = document.querySelector('a');
+          aTag.addEventListener('click', () => {
+            localStorage.setItem("user-info", JSON.stringify(userInfo));
+          });
     }
 }
