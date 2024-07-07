@@ -10,24 +10,21 @@
     <input id="go" style="position: absolute; left: 37%;" type="number" placeholder="나눠질 수">
     <input id="save" type="number" style="position: absolute; left: 48%;" placeholder="나눌 수">
     <button style="position: absolute; left: 60%;"  onclick="button()  ">출력</button>
-    <input type="text" style="position: absolute; left: 45%; top: 20%;" id="result" readonly>
-    <input type="text" id="remember" style=" text-align: center; position: absolute; top: auto;" readonly></p>
-   
+    
+    <section id="section" style="position: absolute; left: 45%; top: 17%;" >
+    <p id="remember"></p>
+
+   </section>
     <script>
-        
+        let number = 1;
         function button(){
             let b = document.getElementById('save').value;
             let a = document.getElementById('go').value;
             let result = document.getElementById('result');
-            let number = 1;
+            
             let remember = document.getElementById('remember');
-            if (b == 0) {
-                result.value = '나눌 수는 0이 될 수 없습니다.';
-            } else {
-                result.value = Number(a) / Number(b);
-                remember.innerHTML = "<h3>" + result + "</h3>";;
-                number++;
-            }
+            document.querySelector('section').innerHTML +="<p id='remember'>"+ Number(number) + ". " + Number(a) / Number(b) +  "개"  + "</p>";
+            number++;
             
         }
     </script>
