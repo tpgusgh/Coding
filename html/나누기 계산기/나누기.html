@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나누기</title>
+</head>
+<body>
+    <h1 style="text-align: center;">계산기</h1>
+    <input id="go" style="position: absolute; left: 37%;" type="number" placeholder="나눠질 수">
+    <input id="save" type="number" style="position: absolute; left: 48%;" placeholder="나눌 수">
+    <button style="position: absolute; left: 60%;"  onclick="button()  ">출력</button>
+    <input type="text" style="position: absolute; left: 45%; top: 20%;" id="result" readonly>
+    <input type="text" id="remember" style=" text-align: center; position: absolute; top: auto;" readonly></p>
+   
+    <script>
+        
+        function button(){
+            let b = document.getElementById('save').value;
+            let a = document.getElementById('go').value;
+            let result = document.getElementById('result');
+            let number = 1;
+            let remember = document.getElementById('remember');
+            if (b == 0) {
+                result.value = '나눌 수는 0이 될 수 없습니다.';
+            } else {
+                result.value = Number(a) / Number(b);
+                remember.innerHTML = "<h3>" + result + "</h3>";;
+                number++;
+            }
+            
+        }
+    </script>
+</body>
+</html>
