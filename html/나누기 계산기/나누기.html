@@ -7,25 +7,44 @@
 </head>
 <body>
     <h1 style="text-align: center;">계산기</h1>
-    <input id="go" style="position: absolute; left: 37%;" type="number" placeholder="나눠질 수">
-    <input id="save" type="number" style="position: absolute; left: 48%;" placeholder="나눌 수">
-    <button style="position: absolute; left: 60%;"  onclick="button()  ">출력</button>
+    <input id="name1" style="width: 80px; font-size: large; height: 30px; position: absolute; left: 12%; top: 5%;" type="text" placeholder="상품이름">
+    <input id="name2" style="width: 80px; font-size: large; height: 30px; position: absolute; left: 63%; top: 5%;" type="text" placeholder="상품이름">
+    <input id="go" style="width: 40px; position: absolute; left: 7%;" type="number" placeholder="나눠질 수">
+    <input id="save" type="number" style="width: 40px; position: absolute; left: 20%;" placeholder="나눌 수">
+    <button style="position: absolute; left: 34%;  text-align: center; background-color: black; color: white;"  onclick="button()  ">출력</button>
+    <input id="goo" style="width: 40px; position: absolute; left: 60%;" type="number" placeholder="나눠질 수">
+    <input id="savee" type="number" style="width: 40px; position: absolute; left: 73%;" placeholder="나눌 수">
+    <button style="position: absolute; text-align: center; background-color: black; color: white; left: 88%;"  onclick="buttonn()  ">출력</button>
+    <section id="sectionn" style="position: absolute; left: 60%; top: 17%;" >
+        <p id="rememberr"></p>
     
-    <section id="section" style="position: absolute; left: 45%; top: 17%;" >
+        </section>
+    <section id="section" style="position: absolute; left: 7%; top: 17%;" >
     <p id="remember"></p>
 
-   </section>
+    </section>
     <script>
-        let number = 1;
-        function button(){
+       let number = 1;
+        let numberr = 1;
+
+        function button() {
+            let name1 = document.getElementById('name1').value;
             let b = document.getElementById('save').value;
             let a = document.getElementById('go').value;
-            let result = document.getElementById('result');
-            
             let remember = document.getElementById('remember');
-            document.querySelector('section').innerHTML +="<p id='remember'>"+ Number(number) + ". " + Number(a) / Number(b) +  "개"  + "</p>";
+
+            remember.innerHTML += "<p>" + number + ". " + (Number(a) / Number(b)) + "개" + "</p>";
             number++;
-            
+        }
+
+        function buttonn() {
+            let name2 = document.getElementById('name2').value;
+            let bb = document.getElementById('savee').value;
+            let aa = document.getElementById('goo').value;
+            let rememberr = document.getElementById('rememberr');
+
+            rememberr.innerHTML += "<p>" + numberr + ". " + (Number(aa) / Number(bb)) + "개" + "</p>";
+            numberr++;
         }
     </script>
 </body>
