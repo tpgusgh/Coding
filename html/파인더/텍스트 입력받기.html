@@ -8,17 +8,18 @@
 </head>
 <body>
     <img src="기록.png" id="bttn" onclick="img()" style="width: 50px; height: 50px; position: absolute; right: 5%; top: 0%;">
-    <nav id="nav">
+    <nav id="nav" class="li">
         <ul>
-          <li class="active js"><a onclick="send()" href="기록.html">기록</a></li>
-          <li class="active ts"><a href="section2">샘플</a></li>
-          <li class="active node"><a href="section3">샘플</a></li>
+          <li><a onclick="instagram()">문의하기</a></li>
+          <li><a onclick="money()">후원하기</a></li>
+          <li><a onclick="send()" href="기록.html">기록 </a></li>
         </ul>
       </nav>
     <textarea placeholder="입력해주세요.." id="text1" name="text1" class="input1" cols="600" rows="500"></textarea>
     <input placeholder="입력해주세요.." style="color: black;" type="text" id="text2" class="input2"></input>
     <input onclick="answer()" name="answer" id="answer" class="button" type="button" value="찾기!">
-    <div id="outputtext" class="input3"></div>
+    <input onclick="save()" name="save" id="save" class="button2" type="button2" value="기록 저장하기">
+    <div id="outputtext" class="input3" style="background-color: white;"></div>
     <script src="텍스트 입력받기.js"></script>
     <a href="기록.html">
 </body>

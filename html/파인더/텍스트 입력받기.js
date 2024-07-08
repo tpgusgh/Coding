@@ -1,3 +1,6 @@
+
+let text1 = document.getElementById('text1').value;
+let text2 = document.getElementById('text2').value;
 function escapeHtml(text) {
     const map = {
         '&': '&amp;',
@@ -32,7 +35,24 @@ function answer(){
         }
         const highlightedText= text1.replace(regex, '<span class="highlight">$1</span>');
         document.getElementById('outputtext').innerHTML = highlightedText;
+        
+    }
+}
+function save(){
+    const text1 = document.getElementById('text1').value;
+    const text2 = document.getElementById('text2').value;
+    const escapedText = escapeHtml(text1);
+    const regex = new RegExp(`(${text2})`, 'gi');
         localStorage.setItem('text1', text1);
         localStorage.setItem('text2', text2);
-    }
+        location.href='기록.html'
+}
+
+function instagram(){
+    window.open('https://www.instagram.com/hyu.2se');
+}
+
+
+function money(){
+    window.open('돈.html');
 }

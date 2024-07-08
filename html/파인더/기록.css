@@ -1,5 +1,9 @@
 
 .highlight {
     text-decoration: underline;
-    background-color: yellow;
+    background-color: gray;
+}
+body{
+    background-image: url('기록배경.png');
+    background-size: cover;
 }
