@@ -32,17 +32,7 @@ function answer(){
         }
         const highlightedText= text1.replace(regex, '<span class="highlight">$1</span>');
         document.getElementById('outputtext').innerHTML = highlightedText;
-        const data = 'data';
-
-        const userInfo = {
-            id: "아이디",
-            name: "이름",
-            password: "비밀번호",
-          }
-          
-          const aTag = document.querySelector('a');
-          aTag.addEventListener('click', () => {
-            localStorage.setItem("user-info", JSON.stringify(userInfo));
-          });
+        localStorage.setItem('text1', text1);
+        localStorage.setItem('text2', text2);
     }
 }
