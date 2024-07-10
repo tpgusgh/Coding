@@ -21,7 +21,7 @@ function answer(){
     const text1 = document.getElementById('text1').value;
     const text2 = document.getElementById('text2').value;
     if (!text2){
-        document.getElementById('outputtext').innerText = "단어를 입력해주세요.";
+        alert("단어를 입력해주세요.");
         return;
     }
     else{
@@ -29,8 +29,7 @@ function answer(){
         const escapedText = escapeHtml(text1);
         const regex = new RegExp(`(${text2})`, 'gi'); // 입력된 단어를 대소문자 구분 없이(gi 플래그 사용) 찾기 위해 정규 표현식을 사용
         if (!regex.test(text1)) {
-            alert("밑줄이 하나도 없습니다");
-            document.getElementById('outputtext').innerHTML = "";
+            document.getElementById('outputtext').innerText = "밑줄이 하나도 없습니다.";
             return;
         }
         const highlightedText= text1.replace(regex, '<span class="highlight">$1</span>');
@@ -55,4 +54,14 @@ function instagram(){
 
 function money(){
     window.open('돈.html');
+}
+
+function rule(){
+    var rule = document.getElementById('rule');
+    rule.style.display = 'block';
+}
+
+function xx(){
+    var rule = document.getElementById('rule');
+    rule.style.display = 'none';
 }

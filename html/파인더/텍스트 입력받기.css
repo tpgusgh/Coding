@@ -46,7 +46,7 @@
 }
 .button:hover {
     background: rgb(0, 0, 0);
- background: linear-gradient(0deg, rgb(77, 77, 77) 0%, rgb(255, 255, 255) 100%);
+ background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(99, 99, 99) 100%);
  }
 input{
     color: #FFFCFC;
@@ -75,13 +75,13 @@ a {
     padding:15px;
     border:none;
     outline: none;
-    color:white;    
+    color:white;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
   }
   
   #bttn.active {
-    transform:translateX(-100px);
+    transform:translateX(-150px);
   
   }
   #nav {
@@ -136,5 +136,18 @@ a{
   cursor : pointer;
 }
 body{
-  background-color: skyblue;
+  background-color: #FFCFC5;
+}
+.rule{
+  display: flex;
+    width: 1000px;
+    height: 70%;
+    padding: 4px 6px 5px 2px;
+    align-items: center;
+    flex-shrink: 0;
+    border: 3px solid #000;
+    position: absolute;
+    left: 13%;
+    font-size: 18px;
+    top: 10%;
 }
