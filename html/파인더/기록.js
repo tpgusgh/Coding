@@ -25,7 +25,7 @@ if (text1 && text2) {
     let historyText = history.map((entry, index) => {
         const highlightedHistory = entry.text1.replace(new RegExp(`(${entry.text2})`, 'gi'), '<span class="highlight">$1</span>');
         return `${index + 1}. ${highlightedHistory}`;
-    }).join("<br>");
+    }).join("<br> <br>");
 
     document.getElementById('outputtext').innerHTML = `<p>${historyText}</p>`;
 } else {
