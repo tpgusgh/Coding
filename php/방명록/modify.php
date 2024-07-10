@@ -11,7 +11,7 @@
         echo "조회된 값 없음";
     }
     else{
-        $row = mysqli_fetch_assoc($result);;
+        $row = mysqli_fetch_assoc($result);
     }
 
 
