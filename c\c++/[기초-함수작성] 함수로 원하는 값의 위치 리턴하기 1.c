@@ -62,3 +62,4 @@ int main()
   scanf("%d", &k);
   printf("%d\n", f(k));
 }
+
