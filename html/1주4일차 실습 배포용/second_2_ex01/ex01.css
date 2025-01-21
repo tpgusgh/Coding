@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    /* 가로 배치 + 수평 분배 */
+    display: flex;
+    align-items: center; /* 세로 정렬 */
+    justify-content: space-between; /* 좌우로 버튼을 띄우고 가운데에 제목 */
+    max-width: 400px; /* 컨테이너 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 20px; /* 상하좌우 여백 */
+}
+
+.title-container button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+/* 달력 영역은 기존 코드 유지 */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.day,
+.date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* 요일 강조 */
+.day {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+/* 주말 색상 예시 */
+.weekend-sat {
+    color: red; /* 토요일 */
+}
+.weekend-sun {
+    color: blue; /* 일요일 */
+}

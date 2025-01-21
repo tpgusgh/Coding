@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 호버</title>
+    <style>
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+
+
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f1f1f1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 150px;
+        }
+
+        .submenu li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .submenu li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #333;
+        }
+
+        .menu:hover .submenu {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <a href="#">학적</a>
+            <ul class="submenu">
+                <li><a href="#">윤도훈</a></li>
+                <li><a href="#">도훈윤</a></li>
+                <li><a href="#">훈윤도</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 1월 달력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        .calendar {
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .calendar-header {
+            text-align: center;
+            background-color: #ffffff;
+            color: white;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .calendar-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: #f8f8f8;
+            text-align: center;
+            font-weight: bold;
+            gap: 5px;
+        }
+
+        .calendar-days div {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+
+        .calendar-grid div {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+
+        .calendar-grid div:last-child {
+            border-right: none;
+        }
+
+        .calendar-grid div:nth-child(7n) {
+            color: #0004ff;
+        }
+
+        .calendar-grid div:nth-child(7n-6) {
+            color: #ff0000; 
+        }
+
+        .empty {
+            background-color: #ffffff;
+        }
+
+        .day {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: black; position: absolute; top: 23%;">2025년 1월 달력</h2>
+    <div class="calendar">
+        <div class="calendar-days">
+            <div style="color: red; border: 1px solid #eee;">일</div>
+            <div style="border: 1px solid #eee;">월</div>
+            <div style="border: 1px solid #eee;">화</div>
+            <div style="border: 1px solid #eee;">수</div>
+            <div style="border: 1px solid #eee;">목</div>
+            <div style="border: 1px solid #eee;">금</div>
+            <div style="color: blue; border: 1px solid #eee;">토</div>
+        </div>
+        <div class="calendar-grid">
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+            <div class="empty"></div>
+        </div>
+    </div>
+</body>
+</html>

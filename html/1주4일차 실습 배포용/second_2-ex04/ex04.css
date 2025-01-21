@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+#minefield {
+    display: inline-block;
+    border: 2px solid #333;
+    user-select: none; /* 드래그 방지 */
+}
+.row {
+    display: flex;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cell.revealed {
+    background-color: #eee;
+    cursor: default;
+}
+.cell.mine {
+    background-color: #f66;
+}
+.cell.flag::after {
+    content: "⛳";
+    color: #e74c3c;
+    font-size: 20px;
+}

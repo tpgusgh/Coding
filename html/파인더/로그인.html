@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        .input {
+  width: 50%;
+  max-width: 140px;
+  height: 5px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+    </style>
+</head>
+<body>
+    <img style="top: 2%; position: absolute; right: 53%; width: 60px; height: 60px;" src="돋보기.png"> <p style="text-align: center; font-size: 30px;">파인더</p>
+        
+    <form onsubmit="event.preventDefault(); login();" style="text-align: center">
+        <label for="id">아이디:</label>
+        <input class="input" type="text" id="id" name="id" placeholder="아이디를 입력해주세요.." required><br><br>
+        <label for="password">비밀번호:</label>
+        <input class="input" type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요.." required><br><br>
+        <input type="submit" value="로그인" style="color: white; background-color: black;">
+    </form>
+    <script src="로그인.js"></script>
+</body>
+</html>

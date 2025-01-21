@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 찾아줘</title>
+    <link rel="stylesheet" href="텍스트 입력받기.css">
+</head>
+<body>
+    <img src="기록.png" id="bttn" onclick="img()" style="width: 50px; height: 50px; position: absolute; right: 0%; top: 0%;">
+    <nav id="nav" class="li">
+        <ul>
+          <li><a onclick="instagram()">문의하기</a></li>
+          <li><a onclick="money()">후원하기</a></li>
+          <li><a onclick="send()" href="기록.html">기록 </a></li>
+          <Li><a onclick="rule()">설명</a></Li>
+        </ul>
+      </nav>
+    <textarea placeholder="입력해주세요.." id="text1" name="text1" class="input1" cols="600" rows="500"></textarea>
+    <input placeholder="입력해주세요.." style="color: black;" type="text" id="text2" class="input2"></input>
+    <input onclick="answer()" name="answer" id="answer" class="button" type="button" value="찾기!">
+    <input onclick="save()" name="save" id="save" class="button2" type="button2" style="cursor: pointer;" value="기록 저장하기">
+    <div id="outputtext" class="input3" style="background-color: white;" ></div>
+    <div id="rule" style="display: none;">
+    <img src="엑스.png" onclick="xx()" style="width: 30px; height: 30px; position: absolute; top: 11%; left: 81%; z-index: 5; cursor: pointer;">
+    <textarea  name="rule" class="rule" cols="600" rows="500" readonly style="z-index: 4;">기본 사용방법
+
+1.찾고싶은 단어가 있는 문장을 복사해서 넣는다.
+2.오른쪽 빈칸에 찾고싶은 단어를 쓰고 찾아보기를 누른다.
+                
+                
+기록 저장하는 방법
+                
+문장과 단어 입력 후 기록 저장하기를 누른다.
+                
+                
+기록 저장보는 방법
+
+오른쪽 상단에 기록바를 누르고 기록을 누른다.
+                
+                
+                
+많은 사용 부탁한다.
+                </textarea>
+            </div>
+    <script src="텍스트 입력받기.js"></script>
+</body>
+</html>
