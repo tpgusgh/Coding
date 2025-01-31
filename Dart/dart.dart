@@ -1,7 +1,7 @@
 enum Status{
     approved,
     pending,
-    rejected,
+    rejected, //like class
 }
 
 void main(){
