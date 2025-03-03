@@ -1,7 +1,7 @@
 <?php
     $conn = mysqli_connect('localhost', 'root', '', 'mydb');
     if(mysqli_connect_errno()){
-        echo '왜지.. MYSQL 접속 실패 : ' .mysqli_connect_error();
+        echo '왜지.. MYSQL 접속 실패 : ' .mysqli_connect_error(); //아마도 포멧해서 DB없을듯
         exit();
     }
 ?>
