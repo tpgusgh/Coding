@@ -62,7 +62,7 @@ public class Main {
         Bank[] account = new Bank[10]; //계좌 총 10개만들 수 있는 배열생성
         int accountlist = 0; // 계좌갯수
 
-        account[accountlist++] = new Bank("123-456", "양효준", 100000);
+        account[accountlist++] = new Bank("123-456", "이준호", 100000);
         account[accountlist++] = new Bank("789-101", "김현호", 10000000);
 
         //입금
@@ -99,7 +99,7 @@ public class Main {
         //잘못된 출금
         for (int i = 0; i < accountlist; i++) {
             if(account[i].getBankNumber().equals("789-101")) {
-                account[i].bmoney(3000,"양효준");
+                account[i].bmoney(3000,"이준호");
                 System.out.println(account[i].sent());
 
             }
