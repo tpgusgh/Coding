@@ -1,0 +1,46 @@
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    line-height: 30px;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    line-height: 30px;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+section{
+    align-items: center;
+    background-color: aliceblue;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0px;
+}
+
+nav{
+    position: fixed;
+    top: 30px;
+    left: 0px;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    background-color: lightgray;
+}
