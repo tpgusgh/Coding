@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+}
+.doo{
+    background-color: black;
+    color: white;
+}
+.boo{
+    text-align: center;
+    border: 1px solid #ccc;
+    line-height: 2;
+    padding:10px;
+    background-color: red;
+    color: white;
+}
+img{
+    display: block;
+    margin: auto;
+}

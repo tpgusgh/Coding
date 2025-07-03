@@ -1,0 +1,59 @@
+.input1{
+    display: flex;
+    width: 800px;
+    height: 40%;
+    padding: 4px 6px 5px 2px;
+    align-items: center;
+    flex-shrink: 0;
+    border: 3px solid #000;
+    position: absolute;
+    left: 3%;
+    top: 10%;
+}
+.input2{
+    display: flex;
+    width: 400px;
+    height: 10%;
+    padding: 4px 6px 5px 2px;
+    align-items: center;
+    flex-shrink: 0;
+    border: 3px solid #000;
+    position: absolute;
+    left: 65%;
+    top: 10%;
+}
+.input3{
+    white-space: pre-wrap;
+    padding: 10px;
+    border: 3px solid #000;
+    position: absolute;
+    left: 3%;
+    top: 55%;
+}
+.button{
+    width: 400px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.89);
+    align-items: center;
+    position: absolute;
+    right: 7%;
+    top: 30%;
+}
+input{
+    color: #FFFCFC;
+    font-family: "Nosifer Caps";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    right: 40%;
+    top: 77%;
+}
+.highlight {
+    text-decoration: underline;
+    background-color: yellow; /* 강조 표시 */
+}

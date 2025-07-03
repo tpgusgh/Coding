@@ -1,0 +1,16 @@
+.p{
+    font-style: italic;
+}
+.accent {
+    border: 1px solid black;
+}
+.bg{
+    background-color: aliceblue;
+}
+#container{
+    width: 500px; /*길이*/
+    margin: 100px auto; /* 중앙으로 보내기*/
+    padding: 10px; /*네모 크기 */
+    border: 1px solid green; /*보드*/
+    background-color: greenyellow;/*뒷 배경*/
+}

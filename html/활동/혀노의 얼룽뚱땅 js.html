@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>h3{color:red;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSJSJSJSJSJS</title>
+</head>
+<body>
+    <button onclick="textcontent()">textContent로 표시</botton>
+    <button onclick="innhtml()">innerHTML로 표시</button>
+    <h1>현재 시각</h1>
+    <div id="current"></div>
+
+    <script>
+        let now = new Date();
+        let $curDiv = document.getElementById("current");
+        function textcontent(){
+            $curDiv.textContent=now;
+        }
+        function innhtml(){
+            $curDiv.innerHTML = "<h3>" + now + "</h3>";
+        }
+    </script>  
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름적기</title>
+</head>
+<body>
+    <script>
+    const mysql = require('mysql');
+    const con = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: process.env.MYSQL_PW,
+        database: 'database_name'
+    });
+
+    // 이것은 express의 listen과도 같다. 서버에 정상접속하면 'Connected successfully'가 출력되도록
+    // 접속이 안됐을 시 에러가 뜨도록 하는 코드이다.
+    con.connect((err) => {
+        if(err) throw err;
+        console.log('Connected successfully');
+    })
+    </script>
+</body>
+</html>

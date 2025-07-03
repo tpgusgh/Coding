@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+    <div id="container"  style="width: 480px; margin : 40px auto"></div>
+    <form>
+        <fieldset>
+            <legend>그룹 선택 </legend>
+            <h3>주문할 상품을 선택해 주세요.</h3>
+            <select name="fruit">
+                <option value="apple">레드향 특</option>
+                <option value="orange">레드향 상</option>
+                <option value="strawberry">레드향 중</option>
+                <option value="peach">레드향 소</option>
+            </select>
+            <p></p>
+            <input type='checkbox'name='이름' value="값" checked/>선물용 3kg: <input type="text">개 (최대 5개)<br>
+            <input type='checkbox'name='이름' value="값" checked/> 선물용 5kg: <input type="text">개 (최대 3개)<br>
+            <input type='radio'name='이름' value="값" checked/>밤 
+            <input type='radio'name='이름' value="값" checked/>감
+            <input type='radio'name='이름' value="값" checked/>사과<br> 
+            </fieldset>
+        </form>
+        <button>주문하기</button>
+        <button>취소하기</button>
+    </div>
+</body>
+</html>

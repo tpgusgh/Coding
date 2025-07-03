@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤로또</title>
+    <link href="/활동/로또번호.css" rel="stylesheet">
+</head>
+<body>
+    <h3>로또 생성기</h3>
+
+    <div class="areaW">
+        <div class ="area1"><p class="num"></p></div>
+        <div class ="area1"><p class="num"></p></div>
+        <div class ="area1"><p class="num"></p></div>
+        <div class ="area1"><p class="num"></p></div>
+        <div class ="area1"><p class="num"></p></div>
+        <div class ="area1"><p class="num"></p></div>
+    </div>
+    
+    <p>+</p>
+    
+    <div class="bonus">
+        <div class ="area1"><p class="num"></p></div>
+    </div>
+    
+    <button type="button" id="lottoBtn">당첨번호</button>
+
+    <script>
+        document.getElementById("lottoBtn").onclick = function() {
+            var area1 = document.getElementsByClassName("area1");
+            var p = document.getElementsByClassName("num");
+
+            var numArr = [];
+
+            for(var i = 0; i < area1.length; i++){
+                var flag = true;
+                var number = parseInt(Math.random() * 45 ) + 1;
+                for(var j = 0; j < i; j++){
+                    if(numArr[j] == number){
+                        i--;
+                        flag = false;
+                    }
+                }
+                numArr.sort(function(a, b){return a-b;});
+
+                if(flag){
+                    numArr[i] = number;
+                }
+            }
+            for(var i = 0; i < area1.length; i++){
+                p[i].innerHTML = numArr[i];
+            }
+        }
+    </script>
+</body>
+</html>

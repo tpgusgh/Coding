@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>li</title>
+    <style>
+        #container{
+            width: 1000px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            float: left;
+            padding: 0;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            float: left;
+            margin: 0;
+            padding: 0;
+            z-index: 5;
+            width: 200px;
+            height: 250px;
+        }
+        .caption{
+            position: relative;
+            top: 200px;
+            width: 300px;
+            height: 200px;
+            padding-top: 20px;
+            background: rgba(0,0,0,6);
+            opacity: 0;
+            transition: all 2s ease-in-out;
+            z-index: 10;
+        }
+        li:hover .caption{
+            opacity: 1;
+            transform: translateX(200px);
+        }
+        .caption h2, .caption{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>서유니</h1>
+        <ul>
+            <li>
+                <img src="서유니.jpeg" alt="">
+                <div class="caption">
+                    <h2>서유니</h2>
+                    <p>1살</p>
+                    <p>아님?</p>
+                </div>
+            </li>
+            <li>
+                <img src="졸업.jpeg" alt="">
+                <div class="caption">
+                    <h2>졸업</h2>
+                    <p>현호 2023년도 졸업</p>
+                    <p>ㅋㅋ</p>
+                </div>
+            </li>
+            <li>
+                <img src="서유니.jpeg" alt="">
+                <div class="caption">
+                    <h2>서유나</h2>
+                    <p>체강</p>
+                    <p>ㅋㅋㅋ</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

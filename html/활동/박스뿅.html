@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg{
+            border: 2px solid royalblue;
+            margin-top: 20px;
+            padding: 20px;
+            width: 1000px;
+            height: 400px;
+            box-sizing: border-box;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>자바스크립트연습</h1>
+    <form name="form1">
+    <input type="text" placeholder="입력" id="bon">
+    <input type="button" value="확인" id="button">
+    <input type="button" value="취소" id="button1">
+    <div id="msg" >
+        <p id="con" style="text-align: center; font-size: 20px;"></p>
+    </div>
+    </form>
+    <script>
+        const button = document.getElementById('button');
+        const text=document.getElementById('bon');
+        const button1=document.getElementById('button1');
+        let con=document.getElementById('con');
+        
+        button.addEventListener('click',function(){
+            con.textContent=text.value+"님 환영합니다";
+        })
+
+        button1.addEventListener('click',function(){
+            con.textContent='';
+            text.value='';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+    <style>#demo{border:1px soild #ccc; background-color: lightyellow; width: 400px;} </style>
+
+</head>
+<body>
+    <h1>자바 스크립트 배열</h1>
+    <h2>forEach() Method</h2>
+    <p>for Each() 문은 배열의 각 요소를 반복해서 참조하는 함수를 호출한다.</p>
+    <p id="demo"></p>
+    <script>
+        let $arrPar = document.getElementById("demo");
+        let text = "";
+        const fruits = ["apple","orange","charry"];
+        fruits.forEach(myFunction);
+        $arrPar.innerHTML = text;
+        function myFunction(item, index){
+            text += index + fruits[index]  + "<br>";
+        }
+    </script>
+    
+</body>
+</html>

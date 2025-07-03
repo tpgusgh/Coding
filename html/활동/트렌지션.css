@@ -1,0 +1,19 @@
+#container{
+    width: 500px;
+    margin: 20ox auto;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 50px;
+}
+#box1{
+    background-color: lawngreen;
+    border: 1px solid transparent;
+}
+#box1:hover, #box1:active{
+    animation-name: shape;
+    animation-duration: 3s;
+    
+}

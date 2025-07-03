@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+    <style>
+    h2{background-color: lightblue; width: 400px;}
+    </style>
+</head>
+<body>
+    <h2>counter 구현하기</h2>
+    <h4 id="number">0</h4>
+    <div>
+        <button id="inc">+1</button>
+        <button id="dec">-1</button>
+    </div>
+    <script>
+        const $number = document.getElementById("number");
+        const $ineBtn = document.getElementById("inc");
+        const $decBtn = document.getElementById("dec");
+        $ineBtn.addEventListener("click", "inc");
+            function increase(){
+                const current = parseInt($number.textContent);
+                    $number.textContent = current + 1;
+            }
+        $decBtn.addEventListener("click", "dec");
+            function increase(){
+            const current = parseInt($number.textContent);
+            $number.textContent = current - 1;
+            }
+    </script>
+</body>
+</html>
